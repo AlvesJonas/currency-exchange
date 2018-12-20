@@ -8,9 +8,7 @@ RSpec.describe "Exchange Currency Process", :type => :system, js: true do
       select('USD', from: 'target_currency')
       fill_in 'amount', with: '10'
     end
-    click_button 'CONVERTER'
 
-    # save_and_open_page
-    expect(page).to have_content("value")
+    expect(page.find_by_id('result').value).to eq('34.1325')
   end
 end
