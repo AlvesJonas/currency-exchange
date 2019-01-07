@@ -1,5 +1,5 @@
 $(document).ready ->
-  $('#bla').click ->
+  $('#switch-currency').click ->
     aux = $('[name=source_currency]').val()
     $('[name=source_currency]').val($('[name=target_currency]').val())
     $('[name=target_currency]').val(aux)

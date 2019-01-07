@@ -17,12 +17,13 @@
             <input type='number' name='amount' id='amount' class='form-control' placeholder='Quantidade ($10)' step='any' required>
           </div>
         </div>
-                    
+
+        <a id='switch-currency'>
+          <i class="fas fa-sync"></i>
+        </a>
+
         <div class='destination_currency'>
           <div class='form-group'>
-            <a id='bla'>
-              <i class="fas fa-sync"></i>
-            </a>
             <p class='title'>Moeda Pretendida</p>
             <%= select_tag 'target_currency', options_for_select(currency_list, 'EUR'), class: 'form-control', id: 'target_currency'%>
           </div>
