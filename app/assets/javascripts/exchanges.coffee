@@ -14,7 +14,7 @@ $(document).ready ->
     return false
 
   call_ajax = ->
-    if $("#amount").val() != ""
+    if $("#amount").val() != "" && $("#amount").val() != "0"
       $.ajax '/convert',
         type: 'GET'
         dataType: 'json'

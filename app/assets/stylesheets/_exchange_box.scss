@@ -1,6 +1,11 @@
 .exchange_box{
   #switch-currency{
     color: #ffffff;
+    cursor: pointer;
+
+    img{
+      width: 60%;
+    }
   }
 
   .currency{
@@ -19,34 +24,14 @@
   }
 }
 
-@media only screen and (max-width : 992px) {
-  .card-header {
-    font-size: 25px;
-  }
-
+@media only screen and (max-width : 767px) {
   .title{
-    margin-top: 30px;
-    font-size: 20px;
-  }
-    
-  .form-group {
-    select {
-      font-size: 20px;
-      height: 50px !important;
-    }
-
-    input {
-      font-size: 20px;
-      height: 50px;
-    }
+    margin-top: 15px;
+    font-size: 24px;
   }
 
-
-  #result {
-    margin-bottom: 20px;
-  }
-
-  .btn-exchange {
-    font-size: 20px;
+  #switch-currency img{
+    margin: 20px 0px;
+    transform: rotate(90deg);
   }
 }

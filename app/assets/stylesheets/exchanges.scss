@@ -4,35 +4,27 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .main{
-  margin-top: 50px;
+  margin-top: 15vh;
 }
 
-
-.title-box{
-  margin-top: 20%;
-
-  .title{
-    color: white;
-    text-shadow: 2px 0px 2px #000000;
-  }
-
-  .subtitle{
-    color: white;
-    text-shadow: 3px 0px 3px #000000;
-    font-size: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+.title{
+  color: white;
+  text-shadow: 3px 0px 3px #000000;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
 }
 
- 
-.exchange_box{
-  margin: 10px auto;
-  .logo-box{
-    margin: 0 auto;
-    padding-bottom: 10px;
+.bloco_exchange{
+  margin-top: 30vh;
+}
+
+@media only screen and (max-width : 767px) {
+  .bloco_exchange{
+    margin-top: 15vh;
   }
 }

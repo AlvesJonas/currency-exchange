@@ -1,6 +1,6 @@
-<div class='exchange_box col-sm-12'>
-  <%= form_tag('/convert', method: :get, id: 'exchange_form') do %>
-    <div class='currency local_currency'>
+<%= form_tag('/convert', method: :get, id: 'exchange_form') do %>
+  <div class='exchange_box row'>  
+    <div class='currency local_currency col-md-3 offset-md-1'>
       <div class='form-group'>
         <%= select_tag 'source_currency', options_for_select(currency_list, 'BRL'), class: 'form-control', id: 'source_currency' %>
       </div>
@@ -10,11 +10,13 @@
       </div>
     </div>
 
-    <a id='switch-currency'>
-      <i class="fas fa-sync"></i>
-    </a>
+    <div class="col-md-2 offset-md-1 col-4 offset-4 text-center">
+      <a id='switch-currency'>
+        <%= image_tag "switch", class: 'img-fluid'%>
+      </a>
+    </div>
 
-    <div class='currency destination_currency'>
+    <div class='currency destination_currency col-md-3 offset-md-1'>
       <div class='form-group'>
         <%= select_tag 'target_currency', options_for_select(currency_list, 'EUR'), class: 'form-control', id: 'target_currency'%>
       </div>
@@ -22,5 +24,5 @@
         <input type='text' id='result' name='result' class='form-control' placeholder='Resultado' readonly>
       </div>
     </div>
-  <% end %>
-</div>
+  </div>
+<% end %>
