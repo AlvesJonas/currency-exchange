@@ -1,61 +1,36 @@
 .exchange_box{
+  #switch-currency{
+    cursor: pointer;
 
-  .card{
-    border: 0;
+    img{
+      width: 60%;
+    }
+  }
 
-    .card-header{
-      background-color: #878d99;
-      border-radius: 0;
-      color: white;
-      font-weight: 700;
+  .currency{
+    .form-group{
+      margin: 0;
     }
 
-    .card-block{
-      padding-top: 10px;
-      padding: 20px;
-
-      .title{
-        color: #878d99;
-        font-weight: 700;
-      }
-
-      .btn-exchange{
-        background-color: #5bc0de;
-        border-color: #5bc0de;
-        border-radius: 0;
-      }
+    select {
+      border-radius: 0.25rem 0.25rem 0 0;
     }
+  
+    input{
+      border-radius: 0 0 0.25rem 0.25rem;
+      border-top: none;
+    } 
   }
 }
 
-@media only screen and (max-width : 992px) {
-  .card-header {
-    font-size: 25px;
-  }
-
+@media only screen and (max-width : 767px) {
   .title{
-    margin-top: 30px;
-    font-size: 20px;
-  }
-    
-  .form-group {
-    select {
-      font-size: 20px;
-      height: 50px !important;
-    }
-
-    input {
-      font-size: 20px;
-      height: 50px;
-    }
+    margin-top: 15px;
+    font-size: 24px;
   }
 
-
-  #result {
-    margin-bottom: 20px;
-  }
-
-  .btn-exchange {
-    font-size: 20px;
+  #switch-currency img{
+    margin: 20px 0px;
+    transform: rotate(90deg);
   }
 }
