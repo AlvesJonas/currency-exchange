@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Exchange Currency Process", :type => :system, js: true do
-  it "exchange value" do
+  pending "exchange value" do
     visit '/'
     within("#exchange_form") do
       select('EUR', from: 'source_currency')
@@ -10,7 +10,6 @@ RSpec.describe "Exchange Currency Process", :type => :system, js: true do
     end
     click_button 'CONVERTER'
 
-    # save_and_open_page
     expect(page).to have_content("value")
   end
 end
